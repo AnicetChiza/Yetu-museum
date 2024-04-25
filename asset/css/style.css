@@ -286,7 +286,10 @@ h6,
 .section-intro .blur-background {
   animation: moveUpDown 3s infinite alternate; 
 }
-
+.section-intro .logo-img img{
+  width: 100px;
+  
+}
 
 /* Position initiale */
 .blur-background {
@@ -472,10 +475,7 @@ h6,
   justify-content: left;
   margin-top: 80px;
 }
-.section-intro .logo-img img{
-  width: 100px;
-  
-}
+
 .voir-plus {
   text-align: center;
   margin-top: 50px; 
