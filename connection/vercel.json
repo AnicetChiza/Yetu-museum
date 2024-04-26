@@ -1,0 +1,5 @@
+{
+    "rerwites":[
+        {"source":"/(.*)","destination":"/"}
+    ]
+}
