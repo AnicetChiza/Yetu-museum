@@ -429,6 +429,12 @@ h6,
   transition: all 1s;
   padding: 3px;
 }
+.section2 .content .text-box .artiste-name .details-art{
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+}
 .section2 .content .text-box .artiste-name a:hover{
   background-color: rgba(235, 235, 235, 0.37);
   color: black;
@@ -797,3 +803,5 @@ h6,
 .footer .logo-footer img{
   width: 300px;
 }
+
+/* ADDITIONNEL TAGS */
