@@ -255,11 +255,6 @@ h6,
   background-color: initial;
 }
 
-.section-intro .custom-model {
-  width: 500px;
-  height: 55vh;
-}
-
 /* Blur Background */
 .section-intro .blur-background {
   position: absolute;
@@ -288,7 +283,6 @@ h6,
 }
 .section-intro .logo-img img{
   width: 100px;
-  
 }
 
 /* Position initiale */

@@ -40,7 +40,7 @@
                 </a>
             </li>
             <li class="list">
-                <a href="#">
+                <a href="expositions/">
                     <span class="icon">
                         <i class="bi bi-easel"></i>
                     </span>
@@ -48,7 +48,7 @@
                 </a>
             </li>
             <li class="list">
-                <a href="#">
+                <a href="statistique-des-artist/">
                     <span class="icon">
                         <i class="bi bi-graph-up"></i>
                     </span>
@@ -64,7 +64,7 @@
                 </a>
             </li>
             <li class="list">
-                <a href="#">
+                <a href="login/">
                     <span class="icon">
                         <i class="bi bi-box-arrow-in-left"></i>
                     </span>
@@ -191,6 +191,9 @@
                         </div>
 
                     </div>
+                    <div class="voir-plus">
+                        <button class="voir-plus-btn">Explorez plus d'œuvres</button>
+                    </div>   
                     <div class="voir-plus">
                         <button class="voir-plus-btn">Explorez plus d'œuvres</button>
                     </div>                    
@@ -410,87 +413,7 @@
       </footer>
     </main>
     
-    <!-- JS VANILLA -->
-    <script>
-        const list = document.querySelectorAll('.list');
 
-        function hoverLink() {
-            // Afficher l'indicateur lors du survol
-            this.querySelector('.indicator').style.display = 'block';
-        }
-
-        function unhoverLink() {
-            // Cacher l'indicateur lorsque le survol est terminé
-            this.querySelector('.indicator').style.display = 'none';
-        }
-
-        list.forEach((item) => {
-            item.addEventListener('mouseenter', hoverLink);
-            item.addEventListener('mouseleave', unhoverLink);
-        });
-
-
-    </script>
-
-    <script>
-        function playVideo() {
-            const video = document.querySelector('.section2 .content .image .video');
-            const initialImage = document.querySelector('.section2 .content .image .initial-image');
-
-            initialImage.style.display = 'none';
-            video.style.display = 'block';
-            video.play();
-        }
-
-        function stopVideo() {
-            const video = document.querySelector('.section2 .content .image .video');
-            const initialImage = document.querySelector('.section2 .content .image .initial-image');
-
-            video.pause();
-            video.currentTime = 0;
-            video.style.display = 'none';
-            initialImage.style.display = 'block';
-        }
-
-    </script>
-
-    <script>
-        // Récupération des éléments
-        const video = document.querySelector('.section2 .content .image .video');
-        const initialImage = document.querySelector('.section2 .content .image .initial-image');
-        const playPauseButton = document.querySelector('.play-pause-button');
-        const videoProgress = document.querySelector('.video-progress');
-
-        // Gestion du bouton de lecture/pause
-        playPauseButton.addEventListener('click', function() {
-            if (video.paused) {
-                video.play();
-                playPauseButton.innerHTML = '<i class="bi bi-pause-fill"></i>';
-            } else {
-                video.pause();
-                playPauseButton.innerHTML = '<i class="bi bi-play-fill"></i>';
-            }
-        });
-
-        // Mise à jour de la barre de progression
-        video.addEventListener('timeupdate', function() {
-            const progress = (video.currentTime / video.duration) * 100;
-            videoProgress.value = progress;
-        });
-
-        // Changement de la position de la vidéo en fonction de la barre de progression
-        videoProgress.addEventListener('input', function() {
-            const progress = videoProgress.value;
-            video.currentTime = (progress * video.duration) / 100;
-        });
-
-        // Masquer la vidéo et afficher l'image initiale lors du chargement de la page
-        video.style.display = 'none';
-        initialImage.style.display = 'block';
-  
-    </script>
-
-    <!-- JS Bootstrap (Popper.js et jQuery inclus) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -502,18 +425,6 @@
 
     <script>
         
-
-        document.addEventListener('scroll', function() {
-    var scrollPosition = window.scrollY;
-    var blurBackground = document.querySelector('.blur-background');
-
-    if (scrollPosition > 50) { 
-        blurBackground.classList.add('moved');
-    } else {
-        blurBackground.classList.remove('moved');
-    }
-});
-
 
 
 
@@ -567,5 +478,6 @@
             });
         }
     </script>
+    <script src="asset/js/vannilla.js"></script>
 </body>
 </html>
