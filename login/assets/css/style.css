@@ -1,91 +1,98 @@
-body{
-    margin: 0;
-    padding: 0;
-  }
-  .section_one{
-      display: flex;
-      height: 100vh;
-      background-color:white;
-  }
-  a{
-      text-decoration: none;
-      color: black;
-  }
-  .black_background_div{
-     width: 70%;
-     color: white;
-     z-index: 2px;
-     background-image: url("../images/bakulu.jpg");
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: cover;
-      clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0); 
-  }
-  .identity_div{
-      background-color: white;
-      display: block;
-      text-align: center;
-  }
-  .section_one div form{
-  
-      display: grid;
-      width: fit-content;
-      margin: auto;
-      margin-top:100px;
-     
-  }
-  .section_one div form input,.section_one div form button{
-      margin: 20px;
-      width: 200px;
-      margin-left: auto;
-      margin-right: auto;
-  }
-  .section_one div form input{
-      border-top: none;
-      border-left: none;
-      border-right: none;
-      outline: none;
-      border-bottom: 2px solid black;
-  }
-  .validedation_btn{
-      background-color: black;
-      color: white;
-      outline: none;
-      border:none;
-      height: 30px;
-      transition: all 0.5s;
-  }
-  .validedation_btn:hover{
-      border:1px solid black;
-      color:black;
-      background-color: white;
-      width: 200px;
-      height: 30px;
-  }
-  .createCompt_btn{
-      border:1px solid black;
-      color:black;
-      background-color: white;
-      width: 200px;
-      height: 30px;
-      display: flex;
-      justify-content: center;
-      transition: all 0.5s;
-  }
-  .createCompt_btn p{
-      margin:5px;
-  }
-  .createCompt_btn:hover{
-      background-color: black;
-      color: white;
-      outline: none;
-      border:none;
-      height: 30px;
-  }
-  .logo_google{
-      width: 20px;
-      height: 20px;
-      margin: 4px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+.section_one{
+    display: flex;
+    height: 100vh;
+    background-color:white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.black_background_div{
+    width: 70%;
+    
+    height: 100vh;
+    background: linear-gradient(to right, rgba(225, 225, 219, 0.8) 0%, rgba(0, 0, 0, 0.875) 100%), url(../../../asset/images/background0.jpg) no-repeat fixed;
+    background-size: cover;
+    position: relative;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0); 
+}
+.identity_div{
+    background-color: white;
+    display: block;
+    
+    
+}
+.section_one div form{
+    
+    width: fit-content;
+    margin: auto;
+    margin-top:150px;
+    
+}
+.section_one div form input,.section_one div form button, .section_one div form select{
+    margin: 20px 0 20px 0;
+    width: 100%;
+    
+    
+}
+.section_one div form input, .section_one div form select{
+   border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+}
+.section_one div form textarea{
+    width: 100%;
+    margin: 20px 0 20px 0;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    height: 25px;
+}
+.validedation_btn{
+    background-color: black;
+    color: white;
+    outline: none;
+    border:none;
+    padding: 9px;
+    transition: all 0.5s;
+    float: right;
+}
+.validedation_btn:hover{
+    border:1px solid black;
+    color:black;
+    background-color: white;
+    width: 250px;
+
+}
+.createCompt_btn{
+    border:1px solid black;
+    color:black;
+    background-color: white;
+
+
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s;
+    padding: 5px;
+}
+.createCompt_btn p{
+    margin:5px;
+}
+.createCompt_btn:hover{
+    background-color: black;
+    color: white;
+    outline: none;
+    border:none;
+    
+    width: 250px;
+}
+.logo_google{
+    width: 20px;
+    height: 20px;
+    margin: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section_one div form .sub-text{
+    text-align: center;
+}
