@@ -32,3 +32,27 @@
     border-radius: 5px;
     border-bottom: 2px solid #c8c7c7;
 }
+
+.oeuvre-display {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: auto auto;
+}
+
+.artiste-content .big-image {
+    width: 100%;
+}
+
+.artiste-content div {
+    display: grid;
+    gap: 5px;
+    margin-top: 5px;
+    -webkit-column-gap: 5px;
+    grid-template-columns: auto auto auto auto;
+}
+
+.artiste-content div .small-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
