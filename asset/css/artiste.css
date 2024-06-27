@@ -6,3 +6,12 @@
     margin-right: 100px;
     overflow: hidden;
 }
+
+.artiste-section h1 {
+    text-align: center;
+}
+
+.artiste-intro {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
