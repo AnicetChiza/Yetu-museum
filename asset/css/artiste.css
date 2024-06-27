@@ -19,8 +19,6 @@
 .top-lines {
     display: grid;
     gap: 10px;
-    margin-top: 40px;
-    margin-bottom: 20px;
     -webkit-column-gap: 10px;
     grid-template-columns: 5% auto;
 }
@@ -33,12 +31,4 @@
 .top-lines h6 {
     border-radius: 5px;
     border-bottom: 2px solid #171717db;
-}
-
-.artiste-flex {
-    display: flex;
-}
-
-.artiste-profil img {
-    width: 100%;
 }
