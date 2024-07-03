@@ -154,14 +154,14 @@
             const artistItem = document.querySelector('.artist-item');
 
             // Affiche la biographie par défaut
-            artistProfil.style.display = 'block';
+            artistProfil.style.display = 'flex';
             artistItem.style.display = 'none';
 
             // Gestion du clic sur "Biographie"
             biographie.addEventListener('click', function() {
                 biographie.classList.add('active');
                 mesOeuvres.classList.remove('active');
-                artistProfil.style.display = 'block';
+                artistProfil.style.display = 'flex';
                 artistItem.style.display = 'none';
             });
 
