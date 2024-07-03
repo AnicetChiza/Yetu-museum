@@ -943,16 +943,23 @@ h2[data-scroll="in"]:before {
     border-radius: 10px;
 }
 
-.artist-oeuvre .profil-image,
-.big-image {
-    width: 400px;
-    height: 40vh;
-    object-fit: cover;
-}
-
 .artist-oeuvre .artist-item {
     display: grid;
     gap: 10px;
     -webkit-column-gap: 20px;
     grid-template-columns: auto auto;
+    overflow: hidden;
+}
+
+.artist-oeuvre .profil-image,
+.big-image {
+    width: 400px;
+    height: 40vh;
+    object-fit: cover;
+    transition: 0.4s ease-in;
+    transition-delay: 0.2s;
+}
+
+.artist-oeuvre .artist-item:hover .big-image {
+    transform: scale(1.1);
 }
