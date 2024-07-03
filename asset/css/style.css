@@ -923,15 +923,36 @@ h2[data-scroll="in"]:before {
     border-bottom: 2px solid #c8c7c7;
 }
 
-.artist-oeuvre .artist-profil,
+.artist-oeuvre .artist-profil {
+    display: flex;
+    flex-direction: row;
+}
+
+.artist-oeuvre .artist-profil div {
+    z-index: 222;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(-80px, 20px);
+}
+
+.artist-oeuvre .profil-image {
+    border-radius: 10px;
+}
+
+.artist-oeuvre .profil-image,
 .big-image {
     width: 400px;
     height: 40vh;
     object-fit: cover;
 }
 
-.artist-oeuvre .small-image {
-    width: 200px;
-    height: 20vh;
-    object-fit: cover;
+.artist-oeuvre .artist-item {
+    display: grid;
+    gap: 10px;
+    -webkit-column-gap: 20px;
+    grid-template-columns: auto auto;
 }
