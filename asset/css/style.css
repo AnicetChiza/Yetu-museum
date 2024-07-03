@@ -950,12 +950,10 @@ h2[data-scroll="in"]:before {
     border-radius: 10px;
 }
 
-.artist-oeuvre .artist-item {
-    display: grid;
-    gap: 0px;
-    -webkit-column-gap: 0px;
-    grid-template-columns: auto auto;
-    overflow: hidden;
+.artist-oeuvre .artist-item div {
+    display: flex;
+    gap: 15px;
+    -webkit-column-gap: 15px;
 }
 
 .artist-oeuvre .profil-image,
@@ -971,6 +969,6 @@ h2[data-scroll="in"]:before {
     height: 25vh;
 }
 
-.artist-oeuvre .artist-item:hover .big-image {
-    transform: scale(1.1);
+.artist-oeuvre .big-image:hover {
+    transform: translateY(10px);
 }
