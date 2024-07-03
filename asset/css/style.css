@@ -884,6 +884,34 @@ h2[data-scroll="in"]:before {
 
 /* Artiste */
 
+
+/*.show-image {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000e1;
+}
+
+.show-image img {
+    width: 100%;
+    height: 60vh;
+}
+
+.show-image i {
+    color: #000;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 1.2rem;
+    padding: 10px 12px;
+    border-radius: 50%;
+    background-color: #fff;
+}*/
+
 .top-line {
     display: grid;
     gap: 5px;
@@ -950,25 +978,45 @@ h2[data-scroll="in"]:before {
     border-radius: 10px;
 }
 
-.artist-oeuvre .artist-item div {
-    display: flex;
-    gap: 15px;
-    -webkit-column-gap: 15px;
+.artist-oeuvre .artist-item .artist-item-bloc {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 0px;
+    column-gap: 12px;
 }
 
-.artist-oeuvre .profil-image,
-.big-image {
+.artist-oeuvre .profil-image {
     width: 400px;
     height: 40vh;
+    object-fit: cover;
+}
+
+.big-image {
+    width: 100%;
+    height: 30vh;
     object-fit: cover;
     transition: 0.4s ease-in;
     transition-delay: 0.2s;
 }
 
-.big-image {
-    height: 25vh;
-}
-
 .artist-oeuvre .big-image:hover {
     transform: translateY(10px);
+}
+
+.item-bloc {
+    position: relative;
+}
+
+.item-bloc div {
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 15px;
+    color: #eee;
+    background-color: #0d0d0da4;
+    align-items: center;
+    justify-content: space-between;
 }
