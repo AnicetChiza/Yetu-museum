@@ -30,8 +30,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-
-
 </head>
 
 <body>
@@ -96,13 +94,13 @@
                 <div class="search-filter">
                     <input type="text" placeholder="Rechercher...">
                     <select name="artist" id="artist">
-                    <option value="">Tous les artistes</option>
-                    <option value="artist1">Bukunde</option>
-                    <option value="artist2">Franck</option>
-                    <option value="artist3">Vincent Asani</option>
-                    <option value="artist3">Eray Mutabesha</option>
-                    <option value="artist3">Anicet Chiza</option>
-                </select>
+                        <option value="">Tous les artistes</option>
+                        <option value="artist1">Bukunde</option>
+                        <option value="artist2">Franck</option>
+                        <option value="artist3">Vincent Asani</option>
+                        <option value="artist3">Eray Mutabesha</option>
+                        <option value="artist3">Anicet Chiza</option>
+                    </select>
                     <button type="submit">Rechercher</button>
                 </div>
             </div>
@@ -121,8 +119,8 @@
                     <div class="artist">
                         <div class="artist-container">
                             <ul>
-                                <li data-filter="*">Biographie</li>
-                                <li data-filter="oeuvre">Mes oeuvres</li>
+                                <li data-filter="profil" class="active">Biographie</li>
+                                <li data-filter="oeuvre">Mes œuvres</li>
                             </ul>
                         </div>
                         <div class="artist-oeuvre">
@@ -150,24 +148,32 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const biographie = document.getElementById('biographie');
-            const mesOeuvres = document.getElementById('mes-oeuvres');
-            const artistOeuvre = document.querySelector('.artist-oeuvre');
+            const biographie = document.querySelector('[data-filter="profil"]');
+            const mesOeuvres = document.querySelector('[data-filter="oeuvre"]');
+            const artistProfil = document.querySelector('.artist-profil');
+            const artistItem = document.querySelector('.artist-item');
 
+            // Affiche la biographie par défaut
+            artistProfil.style.display = 'block';
+            artistItem.style.display = 'none';
+
+            // Gestion du clic sur "Biographie"
             biographie.addEventListener('click', function() {
                 biographie.classList.add('active');
                 mesOeuvres.classList.remove('active');
-                artistOeuvre.style.display = 'none';
+                artistProfil.style.display = 'block';
+                artistItem.style.display = 'none';
             });
 
+            // Gestion du clic sur "Mes œuvres"
             mesOeuvres.addEventListener('click', function() {
                 mesOeuvres.classList.add('active');
                 biographie.classList.remove('active');
-                artistOeuvre.style.display = 'block';
+                artistProfil.style.display = 'none';
+                artistItem.style.display = 'grid'; // Utilisez 'grid' si c'est comme spécifié dans votre CSS
             });
         });
     </script>
-
 
     <!-- vannilla -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -179,8 +185,6 @@
         AOS.init();
     </script>
 
-    <script>
-    </script>
     <script src="../asset/js/scroll-out.js"></script>
     <script type="text/javascript">
         ScrollOut({

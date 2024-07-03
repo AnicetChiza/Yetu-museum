@@ -894,33 +894,27 @@ h2[data-scroll="in"]:before {
     -webkit-column-gap: 10px;
 }
 
-.artist-container ul>li:first-child {
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #0d0d0d;
-}
-
-.artist-container ul>li:nth-child(2) {
+.artist-container ul>li {
     color: #000;
     padding: 10px 15px;
     border-radius: 5px;
     background-color: #eee;
+    transition: background-color 0.3s ease;
 }
 
-.top-line {
-    display: grid;
-    gap: 5px;
-    -webkit-column-gap: 5px;
-    grid-template-columns: 5% auto;
+.artist-container ul>li.active {
+    color: #fff;
+    background-color: #0d0d0d;
 }
 
-.top-line h5 {
-    border-bottom: 2px solid #171717db;
+.artist-profil {
+    display: block;
+    /* Affiche la biographie par défaut */
 }
 
-.top-line h6 {
-    border-bottom: 2px solid #c8c7c7;
+.artist-item {
+    display: none;
+    /* Masque les œuvres par défaut */
 }
 
 .artist-oeuvre .artist-profil {
@@ -928,7 +922,7 @@ h2[data-scroll="in"]:before {
     flex-direction: row;
 }
 
-.artist-oeuvre .artist-profil div {
+.artist-oeuvre .artist-profil .text-box {
     z-index: 222;
     background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(20px);
