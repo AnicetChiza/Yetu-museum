@@ -891,9 +891,18 @@ h2[data-scroll="in"]:before {
     -webkit-column-gap: 10px;
 }
 
-.artist-containerul>li:first-child {
+.artist-container ul>li:first-child {
     color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
     background-color: #0d0d0d;
+}
+
+.artist-container ul>li:nth-child(2) {
+    color: #000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #eee;
 }
 
 .top-line {
