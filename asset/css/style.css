@@ -887,6 +887,9 @@ h2[data-scroll="in"]:before {
 .artist-container ul {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: pointer;
     gap: 10px;
     -webkit-column-gap: 10px;
 }
@@ -913,17 +916,17 @@ h2[data-scroll="in"]:before {
 }
 
 .top-line h5 {
-    border-bottom: 4px solid #171717db;
+    border-bottom: 2px solid #171717db;
 }
 
 .top-line h6 {
-    border: 2px solid #c8c7c7;
+    border-bottom: 2px solid #c8c7c7;
 }
 
 .artist-oeuvre .artist-profil,
 .big-image {
     width: 400px;
-    height: 30vh;
+    height: 40vh;
     object-fit: cover;
 }
 
