@@ -1,21 +1,3 @@
-.artiste-section {
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-left: 100px;
-    margin-top: 100px;
-    margin-right: 100px;
-    overflow: hidden;
-}
-
-.artiste-section h1 {
-    text-align: center;
-}
-
-.artiste-intro {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 .top-lines {
     display: grid;
     gap: 10px;
@@ -31,31 +13,4 @@
 .top-lines h6 {
     border-radius: 5px;
     border-bottom: 2px solid #c8c7c7;
-}
-
-.oeuvre-display {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: auto auto;
-}
-
-.artiste-content .big-image {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.artiste-content div {
-    display: grid;
-    gap: 5px;
-    -webkit-column-gap: 5px;
-    grid-template-columns: auto auto auto auto;
-}
-
-.artiste-content div .small-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
 }
