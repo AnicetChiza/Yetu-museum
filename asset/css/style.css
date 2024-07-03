@@ -15,6 +15,7 @@
 * {
     margin: 0;
     padding: 0;
+    list-style-type: none;
     box-sizing: border-box;
 }
 
@@ -883,16 +884,27 @@ h2[data-scroll="in"]:before {
 
 /* Artiste */
 
-.top-lines {
-    display: grid;
+.artist-container ul {
+    display: flex;
+    flex-direction: row;
     gap: 10px;
     -webkit-column-gap: 10px;
+}
+
+.artist-containerul>li:first-child {
+    color: #fff;
+    background-color: #0d0d0d;
+}
+
+.top-line {
+    display: grid;
+    gap: 5px;
+    -webkit-column-gap: 5px;
     grid-template-columns: 5% auto;
 }
 
-.top-lines h5 {
-    border-radius: 5px;
-    border-bottom: 2px solid #171717db;
+.top-line h5 {
+    border-bottom: 4px solid #171717db;
 }
 
 .top-line h6 {
