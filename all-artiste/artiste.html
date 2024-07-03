@@ -148,6 +148,26 @@
         </div>
     </section>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const biographie = document.getElementById('biographie');
+            const mesOeuvres = document.getElementById('mes-oeuvres');
+            const artistOeuvre = document.querySelector('.artist-oeuvre');
+
+            biographie.addEventListener('click', function() {
+                biographie.classList.add('active');
+                mesOeuvres.classList.remove('active');
+                artistOeuvre.style.display = 'none';
+            });
+
+            mesOeuvres.addEventListener('click', function() {
+                mesOeuvres.classList.add('active');
+                biographie.classList.remove('active');
+                artistOeuvre.style.display = 'block';
+            });
+        });
+    </script>
+
 
     <!-- vannilla -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
