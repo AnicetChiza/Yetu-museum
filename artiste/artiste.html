@@ -88,7 +88,7 @@
     </section>
 
     <div class="show-image">
-        <i class="fa-solid fa-xmark"></i>
+        <i class="fa-solid fa-xmark exit-icon"></i>
         <p><img src="../asset/images/image2.jpeg" alt=""></p>
     </div>
 
@@ -141,28 +141,28 @@
                             <div class="artist-item oeuvre">
                                 <div class="artist-item-bloc">
                                     <div class="item-bloc">
-                                        <p><img class="big-image" src="../asset/images/image2.jpeg" alt=""></p>
+                                        <p><img class="big-image vieuw-img" src="../asset/images/image2.jpeg" alt=""></p>
                                         <div>
                                             <span>Dessin</span>
                                             <a href=""><i class="bi bi-patch-plus-fill"></i></a>
                                         </div>
                                     </div>
                                     <div class="item-bloc">
-                                        <p><img class="big-image" src="../asset/images/fuirelaguerre.jpg" alt=""></p>
+                                        <p><img class="big-image vieuw-img" src="../asset/images/fuirelaguerre.jpg" alt=""></p>
                                         <div>
                                             <span>Photo</span>
                                             <a href=""><i class="bi bi-patch-plus-fill"></i></a>
                                         </div>
                                     </div>
                                     <div class="item-bloc">
-                                        <p><img class="big-image" src="../asset/images/background2.jpg" alt=""></p>
+                                        <p><img class="big-image vieuw-img" src="../asset/images/background2.jpg" alt=""></p>
                                         <div>
                                             <span>Photo</span>
                                             <a href=""><i class="bi bi-patch-plus-fill"></i></a>
                                         </div>
                                     </div>
                                     <div class="item-bloc">
-                                        <p><img class="big-image" src="../asset/images/background1.jpg" alt=""></p>
+                                        <p><img class="big-image vieuw-img" src="../asset/images/background1.jpg" alt=""></p>
                                         <div>
                                             <span>Oeuvre d'art</span>
                                             <a href=""><i class="bi bi-patch-plus-fill"></i></a>
@@ -237,6 +237,32 @@
     </section>
 
     <script>
+        // Vieuw images
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const bigImage = document.querySelectorAll('.show-image');
+            const allImages = document.querySelectorAll('.vieuw-img');
+
+            allImages.forEach(allImages => {
+                allImages.addEventListener('click', function() {
+                    const imageSrc = this.src;
+                    bigImage.forEach(bigImage => {
+                        const imgElement = bigImage.querySelector('img');
+                        imgElement.src = imageSrc;
+                        bigImage.style.display = 'flex';
+                    });
+                });
+            });
+
+            // Add event listener to close the show-image when the exit icon is clicked
+            bigImage.forEach(bigImage => {
+                const exitIcon = bigImage.querySelector('.exit-icon');
+                exitIcon.addEventListener('click', function() {
+                    bigImage.style.display = 'none';
+                });
+            });
+        });
+
         document.addEventListener('DOMContentLoaded', function() {
             const artistSections = document.querySelectorAll('.artist-content');
 
