@@ -1031,9 +1031,14 @@ h2[data-scroll="in"]:before {
 
 .faq-container {
     width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    -webkit-column-gap: 10px;
 }
 
 .faq-list {
+    height: fit-content;
     margin-top: 5px;
     padding: 15px 25px;
     background-color: #fff;

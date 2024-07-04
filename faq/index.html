@@ -126,12 +126,71 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nostrum deleniti voluptate distinctio? Minima dolor sapiente esse eaque at voluptatibus enim illum veniam quam animi excepturi vel, quibusdam optio. Unde.</p>
                     </div>
                 </div>
+                <div class="faq-list">
+                    <div class="faq-question">
+                        <div>
+                            <i class="bi bi-bar-chart"></i>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                        <div>
+                            <i class="bi bi-chevron-right right"></i>
+                            <i class="bi bi-chevron-down down faq-hidden"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer faq-hidden">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nostrum deleniti voluptate distinctio? Minima dolor sapiente esse eaque at voluptatibus enim illum veniam quam animi excepturi vel, quibusdam optio. Unde.</p>
+                    </div>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-question">
+                        <div>
+                            <i class="bi bi-bar-chart"></i>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                        <div>
+                            <i class="bi bi-chevron-right right"></i>
+                            <i class="bi bi-chevron-down down faq-hidden"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer faq-hidden">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nostrum deleniti voluptate distinctio? Minima dolor sapiente esse eaque at voluptatibus enim illum veniam quam animi excepturi vel, quibusdam optio. Unde.</p>
+                    </div>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-question">
+                        <div>
+                            <i class="bi bi-bar-chart"></i>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                        <div>
+                            <i class="bi bi-chevron-right right"></i>
+                            <i class="bi bi-chevron-down down faq-hidden"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer faq-hidden">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nostrum deleniti voluptate distinctio? Minima dolor sapiente esse eaque at voluptatibus enim illum veniam quam animi excepturi vel, quibusdam optio. Unde.</p>
+                    </div>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-question">
+                        <div>
+                            <i class="bi bi-bar-chart"></i>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                        <div>
+                            <i class="bi bi-chevron-right right"></i>
+                            <i class="bi bi-chevron-down down faq-hidden"></i>
+                        </div>
+                    </div>
+                    <div class="faq-answer faq-hidden">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nostrum deleniti voluptate distinctio? Minima dolor sapiente esse eaque at voluptatibus enim illum veniam quam animi excepturi vel, quibusdam optio. Unde.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <script>
-        // Charger l'état initial depuis localStorage
         document.addEventListener('DOMContentLoaded', () => {
             const answers = document.querySelectorAll('.faq-answer');
             const rightIcons = document.querySelectorAll('.right');
@@ -151,7 +210,6 @@
             });
         });
 
-        // Gérer les clics et mettre à jour localStorage
         document.querySelectorAll('.faq-question').forEach((question, index) => {
             question.addEventListener('click', () => {
                 const answers = document.querySelectorAll('.faq-answer');
@@ -160,20 +218,19 @@
 
                 answers.forEach((answer, i) => {
                     if (i === index) {
-                        // Toggle the clicked question's answer
+
                         if (answer.style.display === 'none') {
-                            answer.style.display = 'block'; // Show the answer
-                            rightIcons[i].style.display = 'none'; // Hide 'right' icon
-                            downIcons[i].style.display = 'inline'; // Show 'down' icon
+                            answer.style.display = 'block';
+                            rightIcons[i].style.display = 'none';
+                            downIcons[i].style.display = 'inline';
                             localStorage.setItem(`faq-answer-${i}`, 'open');
                         } else {
-                            answer.style.display = 'none'; // Hide the answer
-                            rightIcons[i].style.display = 'inline'; // Show 'right' icon
-                            downIcons[i].style.display = 'none'; // Hide 'down' icon
+                            answer.style.display = 'none';
+                            rightIcons[i].style.display = 'inline';
+                            downIcons[i].style.display = 'none';
                             localStorage.setItem(`faq-answer-${i}`, 'closed');
                         }
                     } else {
-                        // Hide all other answers
                         answer.style.display = 'none';
                         rightIcons[i].style.display = 'inline';
                         downIcons[i].style.display = 'none';
@@ -183,7 +240,6 @@
             });
         });
 
-        // Assurez-vous que les réponses et les icônes sont correctement initialisées
         document.querySelectorAll('.faq-answer').forEach(answer => {
             answer.style.display = 'none';
         });
