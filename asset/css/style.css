@@ -884,33 +884,34 @@ h2[data-scroll="in"]:before {
 
 /* Artiste */
 
-
-/*.show-image {
+.show-image {
     width: 100%;
     height: 100vh;
-    position: fixed;
     display: flex;
-    z-index: 100;
+    position: fixed;
+    z-index: 800;
+    top: 0;
     align-items: center;
     justify-content: center;
-    background-color: #000000e1;
+    background-color: #000000cb;
 }
 
 .show-image img {
     width: 100%;
-    height: 60vh;
+    height: 70vh;
 }
 
 .show-image i {
     color: #000;
+    font-size: 1.2rem;
     position: absolute;
+    padding: 8px 12px;
     top: 5%;
     right: 5%;
-    font-size: 1.2rem;
-    padding: 10px 12px;
-    border-radius: 50%;
+    cursor: pointer;
+    border-radius: 100%;
     background-color: #fff;
-}*/
+}
 
 .top-line {
     display: grid;
