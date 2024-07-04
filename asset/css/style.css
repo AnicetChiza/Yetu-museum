@@ -1031,10 +1031,6 @@ h2[data-scroll="in"]:before {
 
 .faq-container {
     width: 100%;
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 10px;
-    -webkit-column-gap: 10px;
 }
 
 .faq-list {
@@ -1060,6 +1056,8 @@ h2[data-scroll="in"]:before {
 }
 
 .faq-answer {
+    transition-delay: 0.8s;
+    transition: 1s ease-in;
     border-top: 1px solid #a4a9ae3f;
 }
 
