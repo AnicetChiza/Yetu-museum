@@ -1,5 +1,5 @@
 .bloc-payment {
-    width: 60%;
+    width: 70%;
     padding: 30px;
     margin: 0 auto;
     margin-bottom: 100px;
@@ -41,14 +41,17 @@
     height: 60px;
     margin-top: 15px;
     object-fit: cover;
+    border-radius: 50%;
 }
 
 .payment a {
-    gap: 10px;
+    gap: 5px;
     display: flex;
     color: #000;
     height: fit-content;
     align-items: center;
+    padding-left: 10px;
     text-decoration: none;
+    -webkit-column-gap: 5px;
     border: 1px solid #adacac9e;
 }
