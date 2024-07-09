@@ -29,7 +29,8 @@
 }
 
 .payment {
-    margin-top: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     display: grid;
     gap: 10px;
     -webkit-column-gap: 10px;
