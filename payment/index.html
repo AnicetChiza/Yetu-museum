@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,9 +31,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    
+
 
 </head>
+
 <body>
     <div class="navigation shadow p-3 mb-5 bg-body-tertiary">
         <ul>
@@ -40,7 +42,7 @@
                 <a href="../">
                     <span class="icon">
                         <i class="bi bi-house"></i>
-                    </span>                    
+                    </span>
                     <span class="text">Accueil</span>
                 </a>
             </li>
@@ -84,48 +86,16 @@
             <p class="logo-img">
                 <img src="../asset/images/logo1.png" alt="Logo YETU MUSEUM">
             </p>
-        </div> 
+        </div>
     </section>
 
     <section id="portfolio-details" class="portfolio-details bordering-padding-one section2">
         <div class="bloc-payment">
             <h2>Méthode de paiment</h2>
             <p>Comment aimeriez-vous payer ?</p>
-            <div class="all-payment">
-                <form>
-                    <div class="payment-options">
-                        <input type="radio" id="option1" name="choix" value="option1">
-                        <label for="option1"><img src="../asset/images/logo-airtel.png" alt="" class="logo">Airtel Money</label><br>
-            
-                        <input type="radio" id="option2" name="choix" value="option1">
-                        <label for="option2"><img src="../asset/images/logo-orange.jpg" alt="" class="logo">Orange Money</label><br>
-            
-                        <input type="radio" id="option3" name="choix" value="option1">
-                        <label for="option3"><img src="../asset/images/logo-vodacom.jpg" alt="" class="logo">M-pesa</label><br>
-            
-                        <input type="radio" id="option4" name="choix" value="option1">
-                        <label for="option4"><img src="../asset/images/logo-africell.png" alt="" class="logo">Afri Money</label><br>
-                    </div>
-                    <input type="submit" value="Payer">
-                </form>
-                <div class="payment-international">
-                    
-                    <div class="payment-options">
-                        <input type="radio" id="option5" name="choix" value="option5">
-                        <label for="option1"><i class="bi bi-paypal"></i>PayPal</label><br>
-            
-                        <input type="radio" id="option6" name="choix" value="option1">
-                        <label for="option6"><i class="bi bi-credit-card-fill"></i>Carte bancaire</label><br>
-            
-                        <input type="radio" id="option7" name="choix" value="option7">
-                        <label for="option3"><i class="bi bi-card-text payment-icon"></i>Virement bancaire</label><br>
-                    </div>
-                   
-                </div>
-            </div>
-            
+
         </div>
-      </section>
+    </section>
 
     <!-- vannilla -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -138,10 +108,6 @@
     </script>
 
     <script>
-        
-
-
-
     </script>
     <script src="../asset/js/scroll-out.js"></script>
     <script type="text/javascript">
@@ -154,8 +120,11 @@
     </div>
     <script src="../asset/js/mousemove.js"></script>
     <script type="text/javascript">
-        $(document).mousemove(function(e){
-            $('.pointer').css({left:e.pageX, top:e.pageY});
+        $(document).mousemove(function(e) {
+            $('.pointer').css({
+                left: e.pageX,
+                top: e.pageY
+            });
         })
     </script>
 
@@ -165,27 +134,27 @@
     <script>
         var cursor = document.querySelector(".cursor");
         var cursor2 = document.querySelector(".cursor2");
-        document.addEventListener("mousemove", function(e){
+        document.addEventListener("mousemove", function(e) {
             cursor.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
             cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
         });
     </script>
-    
+
     <script>
         const scrollers = document.querySelectorAll(".scroller");
 
         if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-            addAnimation();            
+            addAnimation();
         }
 
         function addAnimation() {
-            scrollers.forEach((scroller)=>{
+            scrollers.forEach((scroller) => {
                 scroller.setAttribute("data-animated", true);
 
                 const scrollerInner = scroller.querySelector('.scroller-inner');
-                const scrollerContent = Array.from(scrollerInner.children); 
+                const scrollerContent = Array.from(scrollerInner.children);
 
-                scrollerContent.forEach((item)=>{
+                scrollerContent.forEach((item) => {
                     const duplicatedItem = item.cloneNode(true);
                     duplicatedItem.setAttribute("aria-hidden", true);
                     scrollerInner.appendChild(duplicatedItem);
@@ -193,7 +162,8 @@
             });
         }
     </script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
     <script src="../asset/js/vannilla.js"></script>
 </body>
+
 </html>
