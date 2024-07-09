@@ -27,3 +27,20 @@
     padding: 4px 4px;
     background-color: #fff;
 }
+
+.payment {
+    margin-top: 40px;
+}
+
+.payment img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.payment a {
+    display: flex;
+    color: #000;
+    text-decoration: none;
+}
