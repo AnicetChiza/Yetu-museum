@@ -21,8 +21,9 @@
 
 .payment-content p {
     color: #666;
-    margin-top: -22px;
+    margin-top: -28px;
     text-align: center;
     width: fit-content;
+    padding: 4px 4px;
     background-color: #fff;
 }
