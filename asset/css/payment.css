@@ -7,13 +7,22 @@
     box-shadow: 0px 0px 20px #adacac9e;
 }
 
-.bloc-payment h2 {
+.bloc-payment h3 {
     color: #333;
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.bloc-payment p {
-    font-size: 16px;
+.payment-content {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: 1px solid #adacac9e;
+}
+
+.payment-content p {
     color: #666;
-    margin-bottom: 30px;
+    margin-top: -22px;
+    text-align: center;
+    width: fit-content;
+    background-color: #fff;
 }
