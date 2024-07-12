@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="asset/css/style.css">
 
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
@@ -29,7 +28,7 @@
 
 </head>
 <body>
-    <div class="navigation shadow p-3 mb-5 bg-body-tertiary">
+    <div class="navigation shadow p-3 mb-5 bg-body-tertiary" aria-label="Main Navigation">
         <ul>
             <li class="list active">
                 <a href="#">
@@ -40,7 +39,7 @@
                 </a>
             </li>
             <li class="list">
-                <a href="expositions/">
+                <a href="exposition.html">
                     <span class="icon">
                         <i class="bi bi-easel"></i>
                     </span>
@@ -48,7 +47,7 @@
                 </a>
             </li>
             <li class="list">
-                <a href="statistique-des-artist/">
+                <a href="statistique-artistes.html">
                     <span class="icon">
                         <i class="bi bi-graph-up"></i>
                     </span>
@@ -198,7 +197,9 @@
 
                     </div>
                     <div class="voir-plus">
-                        <button class="voir-plus-btn">Explorez plus d'œuvres</button>
+                        <a href="exposition.html">
+                          <button class="voir-plus-btn">Explorez plus d'œuvres</button>
+                        </a>
                     </div>                    
                 </div>
             </div>
@@ -281,13 +282,47 @@
                     <p><a href="##" class="readmore">Lire plus</a></p>
                   </div>
                 </div>
-              </div>
                 <div class="voir-plus">
                     <button class="voir-plus-btn">Découvrez plus d'annonces</button>
                 </div>  
+              </div>
             </div>
         </div>
     </section>
+
+    <!-- New Sponsors and Partners Section -->
+    <section class="sponsors border-padding-one" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+      <div class="container">
+          <h2 class="main-title" data-aos="zoom-in-up">Sponsors</h2>
+          <div class="row">
+              <div class="col-md-3 text-center mb-4">
+                  <img src="asset/images/logo-if.png" alt="Sponsor 1" class="img-fluid sponsor-logo mb-3">
+              </div>
+              <div class="col-md-3 text-center mb-4">
+                  <img src="asset/images/logo-ambassade france.png" alt="Sponsor 2" class="img-fluid sponsor-logo mb-3">
+              </div>
+          </div>
+          <h2 class="main-title" data-aos="zoom-in-up">Partenaires et collaborateurs</h2>
+          <div class="row">
+              <div class="col-md-3 text-center mb-4">
+                  <img src="asset/images/logo-nguvutech.png" alt="Partner 1" class="img-fluid sponsor-logo mb-3">
+              </div>
+              <div class="col-md-3 text-center mb-4">
+                  <img src="asset/images/logo-eclosionhub.png" alt="Partner 2" class="img-fluid sponsor-logo mb-3">
+              </div>
+              <div class="col-md-3 text-center mb-4">
+                  <img src="asset/images/logo-museerdc.png" alt="Partner 3" class="img-fluid sponsor-logo mb-3">
+              </div>
+              <div class="col-md-3 text-center mb-4">
+                  <img src="asset/images/logo-nnp.jpeg" alt="Partner 4" class="img-fluid sponsor-logo mb-3">
+              </div>
+              <div class="col-md-3 text-center mb-4">
+                  <img src="asset/images/logo-foyerculturel.jpeg" alt="Partner 5" class="img-fluid sponsor-logo mb-3">
+              </div>
+          </div>
+      </div>
+  </section>
+  
     <section id="contact" class="contact">
         <div class="container" data-aos="fade-up">
   
@@ -368,11 +403,12 @@
                 <div class="col-md-4 mb-4 mb-md-0">
                   <h3>Navigation</h3>
                   <ul class="list-unstyled">
-                    <li><a href="##">Accueil</a></li>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="##">A propos</a></li>
                     <li><a href="##">Expositions</a></li>
-                    <li><a href="##">Artistes</a></li>
+                    <li><a href="artiste.html">Artistes</a></li>
                     <li><a href="##">Blog</a></li>
-                    <li><a href="##">Vendre des oeuvres</a></li>
+                    <li><a href="faq.html">F.A.Q</a></li>
                   </ul>
                 </div>
                 <div class="col-md-4 mb-4 mb-md-0">
