@@ -227,6 +227,16 @@ h6,
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(to right, rgba(225, 225, 219, 0.8) 0%, rgba(0, 0, 0, 0.875) 100%), url(../../../asset/images/background0.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+.connexion-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
 }
 
 
