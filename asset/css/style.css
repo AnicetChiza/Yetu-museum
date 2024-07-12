@@ -1545,10 +1545,6 @@ h2[data-scroll="in"]:before {
     background-color: #0d0d0d;
 }
 
-.artist-profil {
-    display: flex;
-}
-
 .artist-item {
     display: none;
 }
@@ -1563,7 +1559,7 @@ h2[data-scroll="in"]:before {
     background: #0000001a;
     backdrop-filter: blur(20px);
     padding: 40px;
-    max-width: 400px;
+    max-width: 490px;
     border: 1px solid #ffffff1a;
     border-radius: 10px;
     transform: translate(-80px, 20px);
@@ -1620,6 +1616,18 @@ h2[data-scroll="in"]:before {
 .item-bloc div a {
     color: #fff;
     font-size: 20px;
+}
+
+@media only screen and (max-width: 990px) {
+    .artist-oeuvre .artist-profil {
+        display: flex;
+        flex-direction: column;
+    }
+    .artist-oeuvre .artist-profil .text-box {
+        width: 100%;
+        margin: auto;
+        margin-top: -100px;
+    }
 }
 
 
