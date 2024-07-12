@@ -1466,17 +1466,23 @@ h2[data-scroll="in"]:before {
         width: 100%;
     }
     .payment {
-        margin-top: 20px;
-        margin-bottom: 10px;
         display: grid;
-        gap: 10px;
-        -webkit-column-gap: 10px;
-        transition: 0.5s ease-in-out;
         grid-template-columns: 50% 50%;
     }
 }
 
-@media only screen and (max-width: 680px) {}
+@media only screen and (max-width: 520px) {
+    .payment {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .bloc-payment {
+        padding: 15px;
+    }
+    .payment-content {
+        padding: 10px 10px;
+    }
+}
 
 
 /* Artiste */
