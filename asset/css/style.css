@@ -282,13 +282,19 @@ h6,
 }
 
 .google a {
-    display: flex;
     gap: 10px;
+    color: #000;
+    display: flex;
+    padding: 5px;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
     -webkit-column-gap: 10px;
+    border: 1px solid #000;
 }
 
 .google a img {
-    width: 1.5rem;
+    width: 20px;
 }
 
 
