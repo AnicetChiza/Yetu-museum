@@ -343,6 +343,20 @@ h6,
     color: #000;
 }
 
+.choose-account {
+    display: flex;
+    gap: 10px;
+    -webkit-column-count: 10px;
+}
+
+.choose-account a {
+    width: 100%;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #000;
+}
+
 
 /* PREMIERE SECTION D'INTRODUCTION */
 
