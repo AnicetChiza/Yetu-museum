@@ -291,7 +291,16 @@ h6,
     text-decoration: none;
     justify-content: center;
     -webkit-column-gap: 10px;
-    border: 1px solid #eee;
+    transition-delay: 0.4s;
+    transition: 0.8s ease-in-out;
+    border: 1px solid #e8e8e8;
+}
+
+.google:hover {
+    color: #fff;
+    width: fit-content;
+    text-decoration: none;
+    background-color: #000;
 }
 
 .google img {
