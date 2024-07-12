@@ -233,20 +233,15 @@ h6,
     background-position: center;
 }
 
-.our-content {
-    height: 100vh;
-    background-color: #fff;
-    clip-path: polygon(100% 0%, 85% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
-}
-
 .connexion-container {
-    width: 30%;
+    width: 40%;
     height: 100vh;
     display: flex;
-    padding: 10px 35px;
+    padding: 10px 100px;
     justify-content: center;
     flex-direction: column;
     background-color: #fff;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
 }
 
 .connexion-container .inputs {
