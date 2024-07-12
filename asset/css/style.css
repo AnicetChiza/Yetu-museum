@@ -1484,6 +1484,7 @@ h2[data-scroll="in"]:before {
     position: fixed;
     z-index: 1001;
     top: 0;
+    padding: 15px;
     align-items: center;
     justify-content: center;
     background-color: #000000cb;
@@ -1492,6 +1493,7 @@ h2[data-scroll="in"]:before {
 .show-image img {
     width: 100%;
     height: 70vh;
+    object-fit: cover;
 }
 
 .show-image i {
@@ -1605,8 +1607,8 @@ h2[data-scroll="in"]:before {
     flex-direction: row;
     padding: 15px 15px;
     color: #fff;
-    background-color: #0d0d0da4;
     align-items: center;
+    background-color: #0d0d0da4;
     justify-content: space-between;
 }
 
@@ -1639,6 +1641,13 @@ h2[data-scroll="in"]:before {
     }
     .art h1 {
         font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .show-image img {
+        width: 100%;
+        height: 50vh;
     }
 }
 
