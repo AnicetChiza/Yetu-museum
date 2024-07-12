@@ -1465,6 +1465,15 @@ h2[data-scroll="in"]:before {
     .bloc-payment {
         width: 100%;
     }
+    .payment {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        display: grid;
+        gap: 10px;
+        -webkit-column-gap: 10px;
+        transition: 0.5s ease-in-out;
+        grid-template-columns: 50% 50%;
+    }
 }
 
 
