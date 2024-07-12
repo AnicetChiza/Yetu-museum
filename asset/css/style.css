@@ -1393,7 +1393,6 @@ h2[data-scroll="in"]:before {
     margin-bottom: 100px;
     background-color: #fff;
     box-shadow: 0px 0px 20px #adacac9e;
-    box-shadow: #0000004f 5px 3px, #0000004d 10px 6px, #0000004c 15px 9px;
 }
 
 .bloc-payment h3 {
@@ -1405,16 +1404,8 @@ h2[data-scroll="in"]:before {
 .payment-content {
     margin-top: 15px;
     padding: 10px 20px;
-    border: 1px solid #adacac9e;
-}
-
-.payment-content .payment-message {
-    color: #666;
-    margin-top: -28px;
     text-align: center;
-    width: fit-content;
-    padding: 4px 4px;
-    background-color: #fff;
+    border: 1px solid #adacac9e;
 }
 
 .payment {
