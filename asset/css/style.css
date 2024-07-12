@@ -1476,6 +1476,8 @@ h2[data-scroll="in"]:before {
     }
 }
 
+@media only screen and (max-width: 680px) {}
+
 
 /* Artiste */
 
