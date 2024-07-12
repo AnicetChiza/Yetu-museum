@@ -219,6 +219,17 @@ h6,
 }
 
 
+/* Connexion */
+
+.connexion {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 /* PREMIERE SECTION D'INTRODUCTION */
 
 .section-intro {
