@@ -1565,10 +1565,6 @@ h2[data-scroll="in"]:before {
     transform: translate(-80px, 20px);
 }
 
-.artist-oeuvre .profil-image {
-    border-radius: 10px;
-}
-
 .artist-oeuvre .artist-item .artist-item-bloc {
     display: grid;
     grid-template-columns: auto auto;
@@ -1580,6 +1576,7 @@ h2[data-scroll="in"]:before {
     width: 400px;
     height: 40vh;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .big-image {
@@ -1627,6 +1624,16 @@ h2[data-scroll="in"]:before {
         width: 100%;
         margin: auto;
         margin-top: -100px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .artist-oeuvre .artist-item .artist-item-bloc {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .artist-oeuvre .profil-image {
+        width: 100%;
     }
 }
 
