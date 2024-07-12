@@ -1619,11 +1619,13 @@ h2[data-scroll="in"]:before {
     .artist-oeuvre .artist-profil {
         display: flex;
         flex-direction: column;
+        margin: auto;
     }
     .artist-oeuvre .artist-profil .text-box {
         width: 100%;
         margin: auto;
         margin-top: -100px;
+        transform: translate(10px, 20px);
     }
 }
 
@@ -1634,6 +1636,9 @@ h2[data-scroll="in"]:before {
     }
     .artist-oeuvre .profil-image {
         width: 100%;
+    }
+    .art h1 {
+        font-size: 30px;
     }
 }
 
