@@ -394,6 +394,13 @@ h6,
     }
 }
 
+@media only screen and (max-width: 355px) {
+    .connexion-container {
+        clip-path: none;
+        padding: 10px 15px;
+    }
+}
+
 
 /* PREMIERE SECTION D'INTRODUCTION */
 
