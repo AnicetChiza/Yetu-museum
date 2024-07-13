@@ -378,6 +378,9 @@ h6,
     .connexion-container {
         width: 60%;
     }
+    .choose-account a {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 730px) {
@@ -391,6 +394,13 @@ h6,
     .connexion-container {
         width: 100%;
         padding: 10px 30px 0px 70px;
+    }
+}
+
+@media only screen and (max-width: 416px) {
+    .choose-account {
+        display: flex;
+        flex-direction: column;
     }
 }
 
