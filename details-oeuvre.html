@@ -201,8 +201,62 @@
         </div>
     </div>
 
+    <script>
+        // Vieuw images
 
-    <script src="asset/js/viewimage.js"></script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const bigImage = document.querySelectorAll('.show-image');
+            const allImages = document.querySelectorAll('.vieuw-img');
+
+            allImages.forEach(allImages => {
+                allImages.addEventListener('click', function() {
+                    const imageSrc = this.src;
+                    bigImage.forEach(bigImage => {
+                        const imgElement = bigImage.querySelector('img');
+                        imgElement.src = imageSrc;
+                        bigImage.style.display = 'flex';
+                    });
+                });
+            });
+
+
+            bigImage.forEach(bigImage => {
+                const exitIcon = bigImage.querySelector('.exit-icon');
+                exitIcon.addEventListener('click', function() {
+                    bigImage.style.display = 'none';
+                });
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const artistSections = document.querySelectorAll('.artist-content');
+
+            artistSections.forEach(section => {
+                const biographieButton = section.querySelector('[data-filter="profil"]');
+                const mesOeuvresButton = section.querySelector('[data-filter="oeuvre"]');
+                const artistProfil = section.querySelector('.artist-profil');
+                const artistItem = section.querySelector('.artist-item');
+
+                artistProfil.style.display = 'flex';
+                artistItem.style.display = 'none';
+
+                biographieButton.addEventListener('click', function() {
+                    artistProfil.style.display = 'flex';
+                    artistItem.style.display = 'none';
+                    biographieButton.classList.add('active');
+                    mesOeuvresButton.classList.remove('active');
+                });
+
+                mesOeuvresButton.addEventListener('click', function() {
+                    artistProfil.style.display = 'none';
+                    artistItem.style.display = 'grid';
+                    mesOeuvresButton.classList.add('active');
+                    biographieButton.classList.remove('active');
+                });
+            });
+        });
+    </script>
+
 
     <!-- vannilla -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
