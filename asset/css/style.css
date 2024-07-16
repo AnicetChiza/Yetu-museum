@@ -1983,13 +1983,17 @@ select {
     width: 100%;
     height: 100vh;
     display: flex;
-    position: relative;
+    padding: 20px;
     align-items: center;
     justify-content: center;
 }
 
+.image-verification {
+    width: 60%;
+}
+
 .image-verification img {
-    width: 90%;
+    width: 100%;
     height: 60vh;
     object-fit: cover;
     opacity: 0.4;
@@ -1998,8 +2002,7 @@ select {
 .verification .loading {
     gap: 30px;
     width: 100%;
-    height: 100%;
-    z-index: 100;
+    height: 100vh;
     display: flex;
     position: absolute;
     align-items: center;
@@ -2103,5 +2106,17 @@ select {
     }
     50% {
         transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1.5%));
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .image-verification {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .image-verification {
+        width: 100%;
     }
 }
