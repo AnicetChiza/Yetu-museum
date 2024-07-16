@@ -1975,3 +1975,20 @@ select {
         padding: 10px 15px;
     }
 }
+
+
+/* Image verification */
+
+.loading {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading .ai-verification img {
+    width: 90%;
+    height: 60vh;
+    object-fit: cover;
+}
