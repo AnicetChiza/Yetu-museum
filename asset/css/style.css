@@ -2249,7 +2249,47 @@ select {
     box-shadow: 3.5px 3.5px 0px #d4d4d4;
 }
 
+
+/* hhhhhh */
+
+.screen_out {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+}
+
 .screen_out1 {
+    width: 29em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.screen {
+    width: 29em;
+    height: 14em;
+    border: 2px solid #1d0e01;
+    background: repeating-radial-gradient(#000 0 0.0001%, #ffffff 0 0.0002%) 50% 0/2500px 2500px, repeating-conic-gradient(#000 0 0.0001%, #ffffff 0 0.0002%) 60% 60%/2500px 2500px;
+    background-blend-mode: difference;
+    animation: b 0.2s infinite alternate;
+    border-radius: 10px;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+}
+
+@keyframes b {
+    100% {
+        background-position: 50% 0, 60% 50%;
+    }
+}
+
+
+/*.screen_out1 {
     width: 29em;
     display: flex;
     align-items: center;
@@ -2292,7 +2332,7 @@ select {
     bottom: 0;
     height: 21.7391304348%;
     background: linear-gradient(to right, #006c6b 0%, #005857 16.6666666667%, white 16.6666666667%, #fafafa 33.3333333333%, #001b75 33.3333333333%, #001761 50%, #6c6c6c 50%, #626262 66.6666666667%, #929292 66.6666666667%, #888888 83.3333333333%, #3a3a3a 83.3333333333%, #303030 100%);
-}
+}*/
 
 .bottom {
     width: 100%;
