@@ -2006,8 +2006,8 @@ select {
 }
 
 .verification .loading .spinner {
-    width: 20px;
-    height: 20px;
+    width: 9px;
+    height: 9px;
     position: relative;
 }
 
