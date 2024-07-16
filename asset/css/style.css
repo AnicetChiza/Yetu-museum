@@ -1979,7 +1979,7 @@ select {
 
 /* Image verification */
 
-.loading {
+.verification {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -1987,7 +1987,7 @@ select {
     justify-content: center;
 }
 
-.loading .ai-verification img {
+.verification .image-verification img {
     width: 90%;
     height: 60vh;
     object-fit: cover;
