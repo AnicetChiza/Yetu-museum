@@ -2006,7 +2006,7 @@ select {
     flex-direction: column;
     justify-content: center;
     -webkit-column-gap: 30px;
-    background-color: #000000b6;
+    background-color: #000000bc;
 }
 
 .verification .loading .spinner {
