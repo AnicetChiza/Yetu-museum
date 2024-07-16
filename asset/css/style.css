@@ -2144,8 +2144,8 @@ select {
 
 .main_wrapper {
     width: 100%;
-    display: flex;
     height: 100vh;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -2162,34 +2162,10 @@ select {
     height: 5em;
     border-radius: 50%;
     border: 2px solid black;
-    background-color: #f27405;
+    background-color: #4d4d4d;
     margin-bottom: -6em;
     margin-left: 0em;
     z-index: -1;
-}
-
-.antenna::after {
-    content: "";
-    position: absolute;
-    margin-top: -9.4em;
-    margin-left: 0.4em;
-    transform: rotate(-25deg);
-    width: 1em;
-    height: 0.5em;
-    border-radius: 50%;
-    background-color: #f69e50;
-}
-
-.antenna::before {
-    content: "";
-    position: absolute;
-    margin-top: 0.2em;
-    margin-left: 1.25em;
-    transform: rotate(-20deg);
-    width: 1.5em;
-    height: 0.8em;
-    border-radius: 50%;
-    background-color: #f69e50;
 }
 
 .a1 {
@@ -2231,23 +2207,11 @@ select {
     transform: rotate(-8deg);
 }
 
-.a2d {
-    position: relative;
-    top: -294%;
-    left: 94%;
-    width: 0.5em;
-    height: 0.5em;
-    border-radius: 50%;
-    border: 2px solid black;
-    background-color: #979797;
-    z-index: 99;
-}
-
 .notfound_text {
     background-color: black;
     padding-left: 0.3em;
     padding-right: 0.3em;
-    font-size: 0.80em;
+    font-size: 1em;
     color: white;
     letter-spacing: 0;
     border-radius: 5px;
@@ -2257,13 +2221,12 @@ select {
 .tv {
     width: 30em;
     height: 15em;
-    margin-top: 3em;
     border-radius: 15px;
-    background-color: #d36604;
+    background-color: #d4d4d4;
     display: flex;
     justify-content: center;
     border: 2px solid #1d0e01;
-    box-shadow: inset 0.2em 0.2em #e69635;
+    box-shadow: inset 0.2em 0.2em #d4d4d4;
 }
 
 .tv::after {
@@ -2272,7 +2235,7 @@ select {
     width: 30em;
     height: 15em;
     border-radius: 15px;
-    background: repeating-radial-gradient(#d36604 0 0.0001%, #00000070 0 0.0002%) 50% 0/2500px 2500px, repeating-conic-gradient(#d36604 0 0.0001%, #00000070 0 0.0002%) 60% 60%/2500px 2500px;
+    background: repeating-radial-gradient(#d4d4d4 0 0.0001%, #00000070 0 0.0002%) 50% 0/2500px 2500px, repeating-conic-gradient(#d36604 0 0.0001%, #00000070 0 0.0002%) 60% 60%/2500px 2500px;
     background-blend-mode: difference;
     opacity: 0.09;
 }
@@ -2291,7 +2254,7 @@ select {
     align-self: center;
     justify-content: center;
     border-radius: 15px;
-    box-shadow: 3.5px 3.5px 0px #e69635;
+    box-shadow: 3.5px 3.5px 0px #d4d4d4;
 }
 
 .screen_out {
@@ -2301,8 +2264,7 @@ select {
 }
 
 .screen_out1 {
-    width: 11em;
-    height: 7.75em;
+    width: 29em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2311,7 +2273,7 @@ select {
 
 .screen {
     width: 100%;
-    height: 7.85em;
+    height: 14em;
     position: relative;
     background: linear-gradient(to right, #002fc6 0%, #002bb2 14.2857142857%, #3a3a3a 14.2857142857%, #303030 28.5714285714%, #ff0afe 28.5714285714%, #f500f4 42.8571428571%, #6c6c6c 42.8571428571%, #626262 57.1428571429%, #0affd9 57.1428571429%, #00f5ce 71.4285714286%, #3a3a3a 71.4285714286%, #303030 85.7142857143%, white 85.7142857143%, #fafafa 100%);
     border-radius: 10px;
