@@ -1988,10 +1988,24 @@ select {
     justify-content: center;
 }
 
-.verification .image-verification img {
+.verification .image-verification .skeleton {
     width: 90%;
     height: 60vh;
     object-fit: cover;
+}
+
+.verification .image-verification .skeleton {
+    opacity: .7;
+    animation: skeleton-animation 1s linear infinite alternate;
+}
+
+@keyframes skeleton-animation {
+    0% {
+        background-color: hsl(200, 20%, 70%);
+    }
+    100% {
+        background-color: hsl(200, 20%, 95%);
+    }
 }
 
 .verification .loading {
