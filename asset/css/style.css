@@ -2009,7 +2009,7 @@ select {
     flex-direction: column;
     justify-content: center;
     -webkit-column-gap: 30px;
-    background-color: #000000bc;
+    background-color: hsla(202, 22%, 10%, 0.853);
 }
 
 .verification .loading .spinner {
