@@ -2240,14 +2240,6 @@ select {
     opacity: 0.09;
 }
 
-.curve_svg {
-    position: absolute;
-    margin-top: 0.25em;
-    margin-left: -0.25em;
-    height: 12px;
-    width: 12px;
-}
-
 .display_div {
     display: flex;
     align-items: center;
@@ -2255,12 +2247,6 @@ select {
     justify-content: center;
     border-radius: 15px;
     box-shadow: 3.5px 3.5px 0px #d4d4d4;
-}
-
-.screen_out {
-    width: auto;
-    height: auto;
-    border-radius: 10px;
 }
 
 .screen_out1 {
