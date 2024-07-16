@@ -34,8 +34,22 @@
         <div class="message">
             <h1>Félicitations!</h1>
             <p>Votre image a été vérifier avec succes</p>
+            <canvas id="canvas"></canvas>
         </div>
     </div>
+
+    <script src="confetti.min.js"></script>
+    <script>
+        const config = {
+            angle: 90,
+            spread: 360,
+            startVelocity: 40,
+            elementCount: 150,
+            decay: 0.95
+        };
+
+        confetti.create(document.getElementById('canvas'), config);
+    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
