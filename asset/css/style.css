@@ -2129,10 +2129,12 @@ select {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: auto;
+    background: url('../images/gif-bg.gif') no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
-.message h1 {
+.congrats .message h1 {
     font-size: 3em;
     color: #333;
     margin-bottom: 10px;
