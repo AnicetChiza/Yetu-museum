@@ -1983,6 +1983,7 @@ select {
     width: 100%;
     height: 100vh;
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
 }
@@ -1991,4 +1992,11 @@ select {
     width: 90%;
     height: 60vh;
     object-fit: cover;
+}
+
+.verification .loading {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000000b6;
 }
