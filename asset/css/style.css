@@ -2346,29 +2346,6 @@ select {
     background: linear-gradient(to right, #006c6b 0%, #005857 16.6666666667%, white 16.6666666667%, #fafafa 33.3333333333%, #001b75 33.3333333333%, #001761 50%, #6c6c6c 50%, #626262 66.6666666667%, #929292 66.6666666667%, #888888 83.3333333333%, #3a3a3a 83.3333333333%, #303030 100%);
 }
 
-.lines {
-    display: flex;
-    column-gap: 0.1em;
-    align-self: flex-end;
-}
-
-.line1,
-.line3 {
-    width: 2px;
-    height: 0.5em;
-    background-color: black;
-    border-radius: 25px 25px 0px 0px;
-    margin-top: 0.5em;
-}
-
-.line2 {
-    flex-grow: 1;
-    width: 2px;
-    height: 1em;
-    background-color: black;
-    border-radius: 25px 25px 0px 0px;
-}
-
 .bottom {
     width: 100%;
     height: auto;
