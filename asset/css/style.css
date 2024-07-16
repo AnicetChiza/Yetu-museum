@@ -2014,6 +2014,10 @@ select {
     position: relative;
 }
 
+.verification .loading p {
+    color: #fff;
+}
+
 .spinner div {
     position: absolute;
     width: 50%;
