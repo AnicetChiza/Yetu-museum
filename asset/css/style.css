@@ -2143,6 +2143,7 @@ select {
 /* Fails message */
 
 .main_wrapper {
+    width: 100%;
     display: flex;
     height: 100vh;
     align-items: center;
@@ -2165,19 +2166,6 @@ select {
     margin-bottom: -6em;
     margin-left: 0em;
     z-index: -1;
-}
-
-.antenna_shadow {
-    position: absolute;
-    background-color: transparent;
-    width: 50px;
-    height: 56px;
-    margin-left: 1.68em;
-    border-radius: 45%;
-    transform: rotate(140deg);
-    border: 4px solid transparent;
-    box-shadow: inset 0px 16px #a85103, inset 0px 16px 1px 1px #a85103;
-    -moz-box-shadow: inset 0px 16px #a85103, inset 0px 16px 1px 1px #a85103;
 }
 
 .antenna::after {
@@ -2259,7 +2247,7 @@ select {
     background-color: black;
     padding-left: 0.3em;
     padding-right: 0.3em;
-    font-size: 0.75em;
+    font-size: 0.80em;
     color: white;
     letter-spacing: 0;
     border-radius: 5px;
@@ -2267,8 +2255,8 @@ select {
 }
 
 .tv {
-    width: 17em;
-    height: 9em;
+    width: 30em;
+    height: 15em;
     margin-top: 3em;
     border-radius: 15px;
     background-color: #d36604;
@@ -2281,8 +2269,8 @@ select {
 .tv::after {
     content: "";
     position: absolute;
-    width: 17em;
-    height: 9em;
+    width: 30em;
+    height: 15em;
     border-radius: 15px;
     background: repeating-radial-gradient(#d36604 0 0.0001%, #00000070 0 0.0002%) 50% 0/2500px 2500px, repeating-conic-gradient(#d36604 0 0.0001%, #00000070 0 0.0002%) 60% 60%/2500px 2500px;
     background-blend-mode: difference;
@@ -2322,19 +2310,17 @@ select {
 }
 
 .screen {
-    width: 13em;
+    width: 100%;
     height: 7.85em;
     position: relative;
     background: linear-gradient(to right, #002fc6 0%, #002bb2 14.2857142857%, #3a3a3a 14.2857142857%, #303030 28.5714285714%, #ff0afe 28.5714285714%, #f500f4 42.8571428571%, #6c6c6c 42.8571428571%, #626262 57.1428571429%, #0affd9 57.1428571429%, #00f5ce 71.4285714286%, #3a3a3a 71.4285714286%, #303030 85.7142857143%, white 85.7142857143%, #fafafa 100%);
     border-radius: 10px;
     border: 2px solid black;
-    z-index: 99;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
     color: #252525;
-    letter-spacing: 0.15em;
     text-align: center;
     overflow: hidden;
 }
@@ -2536,17 +2522,4 @@ select {
     width: 17.5em;
     background-color: #171717;
     margin-top: 0.8em;
-}
-
-.text_404 {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    column-gap: 6em;
-    z-index: -5;
-    margin-bottom: 2em;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.5;
-    font-family: Montserrat;
 }
